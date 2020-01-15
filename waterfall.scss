@@ -1,0 +1,41 @@
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.box {
+  float: left;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pic {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+
+  & > a {
+    display: block;
+    width: 100%;
+
+    & > img {
+      border-radius: 3px;
+      display: block;
+      width: 100%;
+    }
+  }
+}
